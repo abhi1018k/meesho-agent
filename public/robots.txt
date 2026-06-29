@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://meesho-seller-growth-ai.vercel.app/sitemap.xml

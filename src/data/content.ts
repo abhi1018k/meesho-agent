@@ -26,19 +26,22 @@ import {
 
 export const contact = {
   phone: "+91 90 99 55 20 44",
+  phoneHref: "tel:+919099552044",
+  email: "abhimovaliya45@gmail.com",
   whatsapp: "https://wa.me/919099552044",
   message:
     "Hi, I want to grow my Meesho business with Meesho Seller Growth AI. Please share the demo and pricing.",
 };
 
 export const navItems = [
-  { label: "Home", href: "#home" },
-  { label: "Features", href: "#features" },
-  { label: "Solutions", href: "#solutions" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "Coming Soon", href: "#coming-soon" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/" },
+  { label: "Features", href: "/#features" },
+  { label: "Solutions", href: "/#solutions" },
+  { label: "Pricing", href: "/#pricing" },
+  { label: "Coming Soon", href: "/#coming-soon" },
+  { label: "FAQ", href: "/#faq" },
+  { label: "Blog", href: "/blog" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export const trustedItems = [

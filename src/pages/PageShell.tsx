@@ -9,7 +9,7 @@ type PageShellProps = {
   children: ReactNode;
 };
 
-export const SITE_URL = "https://meesho-seller-growth-ai.vercel.app";
+export const SITE_URL = "https://meesho-agent.vercel.app";
 
 export function usePageMeta(title: string, description: string) {
   useEffect(() => {

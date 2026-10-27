@@ -13,7 +13,7 @@ export function Navbar() {
   return (
     <header className={cn("sticky top-0 z-50 border-b border-transparent bg-white/82 backdrop-blur-xl transition", hasShadow && "border-slate-200 shadow-sm")}> 
       <nav className="section-shell flex h-16 items-center justify-between gap-4">
-        <a href="#home" className="focus-ring flex items-center gap-2 rounded-xl" aria-label="Meesho Seller Growth AI home">
+        <a href="/" className="focus-ring flex items-center gap-2 rounded-xl" aria-label="Meesho Seller Growth AI home">
           <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-600 text-white shadow-lift">
             <Sparkles className="h-5 w-5" />
           </span>

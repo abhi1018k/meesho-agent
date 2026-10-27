@@ -21,7 +21,7 @@ export function Footer() {
         <div>
           <p className="text-sm font-bold text-ink">Navigate</p>
           <div className="mt-3 grid grid-cols-2 gap-2">
-            {navItems.slice(1, 7).map((item) => (
+            {navItems.slice(1, 8).map((item) => (
               <a key={item.href} href={item.href} className="text-sm text-muted hover:text-brand-700">
                 {item.label}
               </a>
@@ -31,16 +31,26 @@ export function Footer() {
 
         <div id="contact">
           <p className="text-sm font-bold text-ink">Contact</p>
-          <a href={whatsappLink("Footer") } target="_blank" rel="noreferrer" className="mt-3 block text-sm font-semibold text-brand-700">
+          <a href={whatsappLink("Footer")} target="_blank" rel="noreferrer" className="mt-3 block text-sm font-semibold text-brand-700">
             {contact.phone}
           </a>
-          <div className="mt-4 flex gap-4 text-sm text-muted">
-            <a href="#" className="hover:text-ink">Privacy Policy</a>
-            <a href="#" className="hover:text-ink">Terms</a>
+          <a href={"mailto:" + contact.email} className="mt-2 block break-all text-sm font-semibold text-brand-700">
+            {contact.email}
+          </a>
+          <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm text-muted">
+            <a href="/about" className="hover:text-ink">About Us</a>
+            <a href="/contact" className="hover:text-ink">Contact</a>
+            <a href="/blog" className="hover:text-ink">Blog</a>
+            <a href="/privacy-policy" className="hover:text-ink">Privacy Policy</a>
+            <a href="/terms" className="hover:text-ink">Terms</a>
+            <a href="/disclaimer" className="hover:text-ink">Disclaimer</a>
           </div>
         </div>
       </div>
-      <div className="border-t border-slate-100 py-4 text-center text-sm text-muted">Made with love in India</div>
+      <div className="border-t border-slate-100 px-4 py-4 text-center text-xs leading-5 text-muted">
+        <p>© {new Date().getFullYear()} Meesho Seller Growth AI. Made with love in India.</p>
+        <p className="mt-1">Independent service. Not affiliated with or endorsed by Meesho.</p>
+      </div>
     </footer>
   );
 }

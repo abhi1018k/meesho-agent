@@ -43,3 +43,27 @@ a {
     @apply outline-none ring-offset-2 ring-offset-white transition focus-visible:ring-2 focus-visible:ring-brand-500;
   }
 }
+
+@layer components {
+  .prose-page {
+    @apply text-[15px] leading-7 text-slate-700 sm:text-base;
+  }
+  .prose-page h2 {
+    @apply mt-10 mb-3 font-heading text-xl font-bold text-ink sm:text-2xl;
+  }
+  .prose-page h3 {
+    @apply mt-6 mb-2 font-heading text-lg font-semibold text-ink;
+  }
+  .prose-page p {
+    @apply my-4;
+  }
+  .prose-page ul {
+    @apply my-4 list-disc space-y-2 pl-6;
+  }
+  .prose-page a {
+    @apply font-semibold text-brand-700 underline underline-offset-2 hover:text-brand-600;
+  }
+  .prose-page strong {
+    @apply text-ink;
+  }
+}
